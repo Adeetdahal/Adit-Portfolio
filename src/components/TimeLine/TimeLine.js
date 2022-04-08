@@ -50,7 +50,9 @@ const Timeline = () => {
       <SectionTitle>About Me</SectionTitle>
       <div style={{display:'flex',
     flexDirection:'row',
-    paddingBottom:'15px'}}>
+    paddingBottom:'25px',
+    paddingTop:'25px'
+    }}>
           <img src="./images/Adit Mail.jpg" alt="Adit Picture" style={{height:'350px',width:'auto'}}/>
         <div style={{paddingLeft:'25px'}}>
           <SectionText>
