@@ -4,7 +4,7 @@ export const projects = [
     description: "Full Stack MERN Application rationalizing the Experience of vehicle tax payment and collection service.",
       image: '/images/1.png',
       tags: ['Mongo', 'Express', 'React', 'Node'],
-    source: 'https://https://github.com/Adeetdahal/TaxPay.com',
+    source: 'https://github.com/Adeetdahal/TaxPay',
     id: 0,
   }  
 ];
