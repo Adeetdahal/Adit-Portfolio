@@ -6,7 +6,15 @@ export const projects = [
       tags: ['Mongo', 'Express', 'React', 'Node'],
     source: 'https://github.com/Adeetdahal/TaxPay',
     id: 0,
-  }  
+  },
+  {
+    title:'Versify ChatApp',
+    description: "Secure Communication using End-to-End Encyption betweeen two end parties",
+    image:'./images/versify.png',
+    tags: ['React', 'Mongo'],
+    source:'https://github.com/Adeetdahal/versify-frontend',
+    id: 1,
+  },
 ];
 
 export const TimeLineData = [
