@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: 'Tax Pay',
-    description: "Full Stack MERN Application rationalizing the Experience of vehicle tax payment and collection service.",
+    description: "Full Stack MERN Application of vehicle tax payment and collection service",
       image: '/images/1.png',
       tags: ['Mongo', 'Express', 'React', 'Node'],
     source: 'https://github.com/Adeetdahal/TaxPay',
@@ -14,6 +14,30 @@ export const projects = [
     tags: ['React', 'Mongo'],
     source:'https://github.com/Adeetdahal/versify-frontend',
     id: 1,
+  },
+  {
+    title:'Danphe Innnovations',
+    description: "Developed a website to present company details and the services",
+    image:'./images/danphe.png',
+    tags: ['Next','Tailwind CSS'],
+    source:'https://danpheinnovations.com/',
+    id: 2,
+  },
+  {
+    title:'Kanchanjunga English School',
+    description: "Created a website for a school using the WordPress platform",
+    image:'./images/kes.png',
+    tags: ['Wordpress','Tailwind CSS','php'],
+    source:'https://kes.danpheinnovations.com/',
+    id: 3,
+  },
+  {
+    title:'Digifly',
+    description: "Created a marketing website using the WordPress ",
+    image:'./images/digifly.png',
+    tags: ['Wordpress','SASS','php'],
+    source:'https://digifly.com.np/',
+    id: 4,
   },
 ];
 

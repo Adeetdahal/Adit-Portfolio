@@ -8,14 +8,13 @@ const Projects = () => (
   <Section nopadding id="projects">
     <SectionDivider />
     <SectionTitle main>Projects</SectionTitle>
-    <GridContainer  style={{display:'flex', 
-  justifyContent:'center'}}>
+    <GridContainer>
       {projects.map((p, i) => {
         return (
           <BlogCard key={i}>
           <Img src={p.image} />
             <TitleContent>
-              <HeaderThree title>{p.title}</HeaderThree>
+              <HeaderThree>{p.title}</HeaderThree>
               <Hr />
             </TitleContent>
             <CardInfo className="card-info">{p.description}</CardInfo>
