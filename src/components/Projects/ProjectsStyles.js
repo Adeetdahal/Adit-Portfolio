@@ -31,8 +31,10 @@ place-items: start;
 column-gap: 2rem;
 row-gap: 3rem;
 overflow: hidden;
-@media ${(props) => props.theme.breakpoints.sm} {
+@media ${(props) => props.theme.breakpoints.md} {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   padding: 2rem;
   padding-bottom: 0;
@@ -96,7 +98,6 @@ export const CardInfo = styled.p`
   text-align: justify;
   @media ${(props) => props.theme.breakpoints.sm} {
     padding:.3rem
-  
 }
 `;
 

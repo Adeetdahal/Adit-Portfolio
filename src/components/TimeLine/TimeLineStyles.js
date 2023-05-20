@@ -19,9 +19,9 @@ export const CarouselContainer = styled.ul`
 
   //remove scrollbar
   scrollbar-width: none;  
-   &::-webkit-scrollbar {
-     display: none;
-   }
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
   @media ${props => props.theme.breakpoints.sm} {
     overflow-x: scroll;
@@ -152,3 +152,31 @@ export const CarouselButtonDot = styled.div`
   width: 3px;
   height: 3px;
 `
+export const CustomDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  gap: 25px;
+
+  @media ${props => props.theme.breakpoints.sm} {
+    flex-direction: column;
+    gap:10px;
+  }
+`
+export const CustomList = styled.span`
+  position: relative;
+  padding-left: 28px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 6px;
+    right: 0;
+    bottom: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+  }
+`;

@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 
-import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
-import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode, CustomDiv, CustomList } from './TimeLineStyles';
+import { Section, SectionDivider, SectionSubText, SectionTitle } from '../../styles/GlobalComponents';
 import { TimeLineData } from '../../constants/constants';
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
@@ -19,13 +19,10 @@ const Timeline = () => {
 
     if (carouselRef.current) {
       const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length));
-      
+
       scroll(carouselRef.current, scrollLeft);
     }
   }
-  // function PassValue (p){
-  //   text:"Hi, I am a CSIT student and a tech enthusiast, having a keen interest on software development. "
-  // }
 
   const handleScroll = () => {
     if (carouselRef.current) {
@@ -48,23 +45,29 @@ const Timeline = () => {
   return (
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
-      <div style={{display:'flex',
-    flexDirection:'row',
-    paddingBottom:'25px',
-    paddingTop:'25px'
-    }}>
-          <img src="./images/Adit Mail.jpg" alt="Adit Picture" style={{height:'350px',width:'auto'}}/>
-        <div style={{paddingLeft:'25px'}}>
-          <SectionText>
-      WEB DEVELOPER & PROGRAMMER
-          </SectionText>
-          <SectionText>
-          &nbsp; &nbsp; &nbsp; Hi, I am a CSIT student and a tech enthusiast 
-        having a keen interest on software development.
-          </SectionText>
-          </div>    
-      </div>
-      
+      <CustomDiv>
+        <img src="./images/Mustang_trip.jpg" alt="Adit Picture" style={{ height: '350px', width: 'auto', objectFit: 'cover' }} />
+        <div>
+          <SectionSubText >
+            <CustomList>
+              Front End Developer
+            </CustomList>
+            <br />
+            <CustomList>
+              Specializes in ReactJS
+            </CustomList>
+            <br />
+            <CustomList>
+              Prolific experience with Next.js, and Third Party APIs
+            </CustomList>
+            <br />
+            <CustomList>
+              Experienced in Designing and Developing optimized UI, scalable and distributed systems
+            </CustomList>
+          </SectionSubText>
+        </div>
+      </CustomDiv>
+
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
