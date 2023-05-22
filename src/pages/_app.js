@@ -7,8 +7,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <title>Adit Dahal</title>
         <meta name="description" content="Your trusted software developer" />
-        {/* <link rel="icon" type="image/png" sizes="96x96" href="/favicon.png" /> */}
-        <link rel="icon" type="image/png" sizes="36x36" href="/favicon.png" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       </Head>
       <Theme>
         <Component {...pageProps} />
