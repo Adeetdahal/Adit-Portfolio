@@ -12,7 +12,7 @@ const zoomIn = keyframes`
 export const Img = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
   

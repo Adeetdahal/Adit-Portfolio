@@ -1,44 +1,96 @@
 import React from 'react';
 import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+import { List, ListContainer, ListItem, ListParagraph, ListTitle, SubList, SubListItem } from './TechnologiesStyles';
+import {
+  DiBootstrap,
+  DiCss3,
+  DiHtml5,
+  DiJavascript1,
+  DiLinux,
+  DiPhp,
+  DiSass,
 
-const Technologies = () =>  (
-  <Section id="tech">
+} from 'react-icons/di'
+import { SiDotnet, SiNextdotjs, SiStyledcomponents, SiFlutter, SiTailwindcss, SiTypescript, SiWordpress } from 'react-icons/si';
+import { FaJava } from 'react-icons/fa';
+
+const Technologies = () => (
+  <Section id="tech" style={{ width: "100%" }}>
     <SectionDivider divider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I've worked with a range a technologies in the web development world.
-      From Back-end To Design
+      I have gained experience across various technologies within the field of web development, encompassing both back-end development and design aspects.
     </SectionText>
-    <List>
-      <ListItem>
-        <picture>
-          <DiReact size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>Front-End</ListTitle>
-          <ListParagraph>
-            Experiece with <br />
-            React.js
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <picture>
-          <DiFirebase size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>Back-End</ListTitle>
-          <ListParagraph>
-            Fair Experience with <br />
-            Node and Databases
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-      </ListItem>
-    </List>
+    <ListItem>
+      <ListTitle>Languages & Tools</ListTitle>
+      <SubList>
+        <SubListItem>
+          <DiHtml5 size="2rem" />
+          <ListParagraph>HTML</ListParagraph>
+        </SubListItem>
+        <SubListItem>
+          <DiCss3 size="2rem" />
+          <ListParagraph>CSS</ListParagraph>
+        </SubListItem>
+        <SubListItem>
+          <DiJavascript1 size="2rem" />
+          <ListParagraph>JavaScript</ListParagraph>
+        </SubListItem>
+        <SubListItem>
+          <DiReact size="2rem" />
+          <ListParagraph>ReactJS</ListParagraph>
+        </SubListItem>
+        <SubListItem>
+          <SiNextdotjs size="2rem" />
+          <ListParagraph>NextJS</ListParagraph>
+        </SubListItem>
+        <SubListItem>
+          <SiWordpress size="2rem" />
+          <ListParagraph>WordPress</ListParagraph>
+        </SubListItem>
+        <SubListItem>
+          <SiFlutter size="2rem" />
+          <ListParagraph>Flutter</ListParagraph>
+        </SubListItem>
+        <SubListItem>
+          <DiBootstrap size="2rem" />
+          <ListParagraph>Bootstrap</ListParagraph>
+        </SubListItem>
+        <SubListItem>
+          <SiTailwindcss size="2rem" />
+          <ListParagraph>TailWindCSS</ListParagraph>
+        </SubListItem>
+        <SubListItem>
+          <SiStyledcomponents size="2rem" />
+          <ListParagraph>Styled</ListParagraph>
+        </SubListItem>
+        <SubListItem>
+          <DiSass size="2rem" />
+          <ListParagraph>Sass</ListParagraph>
+        </SubListItem>
+        <SubListItem>
+          <FaJava size="2rem" />
+          <ListParagraph>Java</ListParagraph>
+        </SubListItem>
+        <SubListItem>
+          <DiPhp size="2rem" />
+          <ListParagraph>Php</ListParagraph>
+        </SubListItem>
+        <SubListItem>
+          <SiDotnet size="2rem" />
+          <ListParagraph>ASP.NET</ListParagraph>
+        </SubListItem>
+        <SubListItem>
+          <SiTypescript size="2rem" />
+          <ListParagraph>TypeScript</ListParagraph>
+        </SubListItem>
+        <SubListItem>
+          <DiLinux size="2rem" />
+          <ListParagraph>Linux</ListParagraph>
+        </SubListItem>
+      </SubList>
+    </ListItem>
     <SectionDivider colorAlt />
   </Section>
 );
