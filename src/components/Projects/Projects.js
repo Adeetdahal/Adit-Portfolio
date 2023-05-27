@@ -12,14 +12,14 @@ const Projects = () => (
       {projects.map((p, i) => {
         return (
           <BlogCard key={i}>
-          <Img src={p.image} />
+            <Img src={p.image} />
             <TitleContent>
               <HeaderThree>{p.title}</HeaderThree>
               <Hr />
             </TitleContent>
             <CardInfo className="card-info">{p.description}</CardInfo>
             <div>
-              <TitleContent style={{padding:'15px 0 0 0', fontWeight:'bold'}}>Stack</TitleContent>
+              <TitleContent style={{ padding: '15px 0 0 0', fontWeight: 'bold' }}>Stack</TitleContent>
               <TagList>
                 {p.tags.map((t, i) => {
                   return <Tag key={i}>{t}</Tag>;
@@ -27,7 +27,7 @@ const Projects = () => (
               </TagList>
             </div>
             <UtilityList>
-              <ExternalLinks href={p.source}>Source </ExternalLinks>
+              <ExternalLinks href={p.source} target="_blank">Source </ExternalLinks>
             </UtilityList>
           </BlogCard>
         );

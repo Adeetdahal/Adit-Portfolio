@@ -148,13 +148,13 @@ const Header = () => (
       </li>
     </Div2>
     <Div3>
-      <SocialIcons href="https://github.com/Adeetdahal">
+      <SocialIcons href="https://github.com/Adeetdahal" target="_blank">
         <AiFillGithub size="2.8rem" />
       </SocialIcons>
-      <SocialIcons href="https://www.linkedin.com/in/adit-dahal/">
+      <SocialIcons href="https://www.linkedin.com/in/adit-dahal/" target="_blank">
         <AiFillLinkedin size="2.8rem" />
       </SocialIcons>
-      <SocialIcons href="https://www.instagram.com/aditdahal/">
+      <SocialIcons href="https://www.instagram.com/aditdahal/" target="_blank">
         <AiFillInstagram size="2.8rem" />
       </SocialIcons>
     </Div3>

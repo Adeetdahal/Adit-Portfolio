@@ -7,8 +7,10 @@ import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTi
 const Footer = () => {
   return (
     <FooterWrapper>
-      <LinkList style={{display:'flex', 
-    justifyContent:'space-between'}}>
+      <LinkList style={{
+        display: 'flex',
+        justifyContent: 'space-between'
+      }}>
         <LinkColumn>
           <LinkTitle>Call</LinkTitle>
           <LinkItem href="tel:+9779861194747">+977-9861194747</LinkItem>
@@ -25,13 +27,13 @@ const Footer = () => {
           <Slogan>Innovating through bits and digits</Slogan>
         </CompanyContainer>
         <SocialContainer>
-          <SocialIcons href="https://github.com/Adeetdahal">
+          <SocialIcons href="https://github.com/Adeetdahal" target="_blank">
             <AiFillGithub size="2.8rem" />
           </SocialIcons>
-          <SocialIcons href="https://www.linkedin.com/in/adit-dahal/">
+          <SocialIcons href="https://www.linkedin.com/in/adit-dahal/" target="_blank">
             <AiFillLinkedin size="2.8rem" />
           </SocialIcons>
-          <SocialIcons href="https://www.instagram.com/aditdahal/">
+          <SocialIcons href="https://www.instagram.com/aditdahal/" target="_blank">
             <AiFillInstagram size="2.8rem" />
           </SocialIcons>
         </SocialContainer>

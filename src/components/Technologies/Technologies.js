@@ -1,7 +1,6 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { List, ListContainer, ListItem, ListParagraph, ListTitle, SubList, SubListItem } from './TechnologiesStyles';
+import { ListItem, ListParagraph, ListTitle, SubList, SubListItem } from './TechnologiesStyles';
 import {
   DiBootstrap,
   DiCss3,
@@ -10,13 +9,13 @@ import {
   DiLinux,
   DiPhp,
   DiSass,
-
+  DiReact
 } from 'react-icons/di'
 import { SiDotnet, SiNextdotjs, SiStyledcomponents, SiFlutter, SiTailwindcss, SiTypescript, SiWordpress } from 'react-icons/si';
 import { FaJava } from 'react-icons/fa';
 
 const Technologies = () => (
-  <Section id="tech" style={{ width: "100%" }}>
+  <Section id="tech">
     <SectionDivider divider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
