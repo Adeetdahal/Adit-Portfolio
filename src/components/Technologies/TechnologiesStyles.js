@@ -65,7 +65,7 @@ export const SubList = styled.ul`
     margin: 3rem 0;
     flex-wrap: wrap;
     align-items: start;
-    justify-content: start;
+    justify-content:;
 
     @media ${(props) => props.theme.breakpoints.lg} {
         margin: 60px 0;
@@ -73,7 +73,6 @@ export const SubList = styled.ul`
 
     @media ${(props) => props.theme.breakpoints.md} {
         margin: 30px 0;
-        justify-content: center;
     }
 
     @media ${(props) => props.theme.breakpoints.sm} {
@@ -93,6 +92,9 @@ export const SubListItem = styled.li`
     @media ${(props) => props.theme.breakpoints.md} {
         width: 75px;
         margin: 3px;
+    @media ${(props) => props.theme.breakpoints.sm} {
+        width: 75px;
+        margin: 1px 10px;
         padding: 10px;
         transition: all 0.5s ease 0.1s;
         &:hover {
