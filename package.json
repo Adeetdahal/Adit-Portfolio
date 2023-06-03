@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start"
+    "build": "next build --openssl-legacy-provider && next export",
+    "start": "next start --openssl-legacy-provider"
   },
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
