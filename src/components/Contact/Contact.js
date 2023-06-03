@@ -3,10 +3,11 @@ import { Button } from 'react-bootstrap';
 import { Form } from 'react-bootstrap';
 import { Modal } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Section, SectionDivider, SectionSubText, SectionTitle } from '../../styles/GlobalComponents';
-import { ModalTitle } from './ContactStyles';
+import { Section, SectionDivider, SectionSubText, SectionTitle, ButtonBack, ButtonFront } from '../../styles/GlobalComponents';
+import { ModalTitle, Img, Buttons1,Container } from './ContactStyles';
 import CloseButton from 'react-bootstrap/CloseButton';
 import { toast } from 'react-toastify';
+import { GiClick } from 'react-icons/gi';
 
 const ContactMe = () => {
     const [show, setShow] = useState(false);
@@ -72,12 +73,20 @@ const ContactMe = () => {
     };
 
     return (
-        <Section id='contact'>
-            <SectionTitle>Contact</SectionTitle>
-            <Button variant="primary" onClick={handleShow}>
+        <Section id='contact' style={{display:'flex', justifyContent:'center',alignItems: 'center',paddingBottom:'4%'}}>
+            <SectionTitle style={{
+                display:'flex',
+                justifyContent:'start',
+                alignItems:'start',
+                width:'100%'
+            }}>Contact</SectionTitle>
+            {/* <Button variant="primary" onClick={handleShow}>
                 Launch demo modal
-            </Button>
-
+            </Button> */}
+            <Container onClick={handleShow}>
+            <Img src="./images/contact.png" />
+            <Buttons1><GiClick />Hey there! Click me!</Buttons1>
+            </Container>
             <Modal show={show} onHide={handleClose} size="lg" centered style={{ color: 'black' }}>
                 <Modal.Header>
                     <div style={{
@@ -101,12 +110,12 @@ const ContactMe = () => {
                             <Form.Control
                                 type="text"
                                 autoFocus
-                                autoComplete='off'
                                 value={fullname}
                                 onChange={(e) => {
                                     setFullname(e.target.value);
                                 }}
                                 name="fullname"
+                                className='autocomplete-input'
                             />
                         </Form.Group>
                         {errors?.fullname && (
@@ -116,7 +125,6 @@ const ContactMe = () => {
                             <Form.Label>Email address</Form.Label>
                             <Form.Control
                                 type="email"
-                                autoComplete='off'
                                 name="email"
                                 value={email}
                                 onChange={(e) => {
