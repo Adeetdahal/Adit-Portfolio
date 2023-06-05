@@ -6,8 +6,9 @@ export const Container = styled.div`
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: center;
     padding: 2rem;
-    z-index: 5px;
+    z-index: 5;
     @media ${(props) => props.theme.breakpoints.sm} {
     }
 `;
@@ -19,7 +20,7 @@ export const Span = styled.span`
 export const Div1 = styled.div`
     display: flex;
     flex-direction: row;
-    z-index: 5px;
+    z-index: 5;
     align-content: center;
 `;
 export const Div2 = styled.div`
