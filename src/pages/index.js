@@ -6,7 +6,6 @@ import Technologies from '../components/Technologies/Technologies';
 import Timeline from '../components/TimeLine/TimeLine';
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
-import Contact from '../components/Contact/Contact';
 
 const Home = () => {
   return (
@@ -18,7 +17,6 @@ const Home = () => {
       <Projects />
       <Technologies />
       <Timeline />
-      <Contact/>
     </Layout>
   );
 };
