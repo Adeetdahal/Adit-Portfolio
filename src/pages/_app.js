@@ -1,7 +1,5 @@
 import Theme from '../styles/theme';
 import Head from 'next/head'
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 export default function App({ Component, pageProps }) {
   return (
@@ -13,10 +11,6 @@ export default function App({ Component, pageProps }) {
       </Head>
       <Theme>
         <Component {...pageProps} />
-        <ToastContainer
-            theme="dark"
-            // toastStyle={{ backgroundColor: 'black' }}
-          />
       </Theme>
     </>
   );

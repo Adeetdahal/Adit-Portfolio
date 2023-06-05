@@ -134,11 +134,6 @@ const Header = () => (
           <NavLink>About</NavLink>
         </Link>
       </li>
-      <li style={{ zIndex: "5", padding: "0 12px" }}>
-        <Link href="#contact">
-          <NavLink>Contact</NavLink>
-        </Link>
-      </li>
     </Div2>
     <Div3>
       <SocialIcons href="https://github.com/Adeetdahal" target="_blank">
