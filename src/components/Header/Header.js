@@ -14,18 +14,6 @@ import {
 const Header = () => (
   <Container>
     <Div1>
-      {/* <Link href="/">
-        <a
-          style={{
-            display: "flex",
-            alignItems: "center",
-            color: "white",
-            marginBottom: "20px",
-          }}
-        >
-          <DiCssdeck size="3rem" /> <span>Portfolio</span>
-        </a>
-      </Link> */}
       <Link href="/">
         <a
           style={{
@@ -131,19 +119,24 @@ const Header = () => (
       </Link>
     </Div1>
     <Div2>
-      <li style={{ zIndex: "5", padding: "0 15px" }}>
+      <li style={{ zIndex: "5", padding: "0 12px" }}>
         <Link href="#projects">
           <NavLink>Projects</NavLink>
         </Link>
       </li>
-      <li style={{ zIndex: "5", padding: "0 15px" }}>
+      <li style={{ zIndex: "5", padding: "0 12px" }}>
         <Link href="#tech">
           <NavLink>Technologies</NavLink>
         </Link>
       </li>
-      <li style={{ zIndex: "5", padding: "0 15px" }}>
+      <li style={{ zIndex: "5", padding: "0 12px" }}>
         <Link href="#about">
           <NavLink>About</NavLink>
+        </Link>
+      </li>
+      <li style={{ zIndex: "5", padding: "0 12px" }}>
+        <Link href="#contact">
+          <NavLink>Contact</NavLink>
         </Link>
       </li>
     </Div2>

@@ -68,7 +68,7 @@ export const SubList = styled.ul`
     justify-content:;
 
     @media ${(props) => props.theme.breakpoints.lg} {
-        margin: 64px 0;
+        margin: 60px 0;
     }
 
     @media ${(props) => props.theme.breakpoints.md} {
@@ -89,15 +89,22 @@ export const SubListItem = styled.li`
     z-index: 5;
     align-items: center;
     justify-content: start;
+    @media ${(props) => props.theme.breakpoints.md} {
+        width: 75px;
+        margin: 3px;
     @media ${(props) => props.theme.breakpoints.sm} {
         width: 75px;
         margin: 1px 10px;
         padding: 10px;
+        transition: all 0.5s ease 0.1s;
+        &:hover {
+            transform: scale(1.2) !important;
+        }
     }
 
     transition: all 0.5s ease 0.1s;
     &:hover {
-        transform: scale(1.5);
+        transform: scale(1.4);
         -webkit-backdrop-filter: blur(1px);
         backdrop-filter: blur(1px);
         -webkit-backdrop-filter: drop-shadow(4px 4px 10px blue);
