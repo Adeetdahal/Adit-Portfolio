@@ -120,22 +120,22 @@ const Header = () => (
     </Div1>
     <Div2>
       <li style={{ zIndex: "5", padding: "0 12px" }}>
-        <Link href="#projects">
-          <NavLink>Projects</NavLink>
+        <Link href="/#projects" passHref> 
+          <NavLink> Projects</NavLink>
         </Link>
       </li>
       <li style={{ zIndex: "5", padding: "0 12px" }}>
-        <Link href="#tech">
+        <Link href="#tech" passHref>
           <NavLink>Technologies</NavLink>
         </Link>
       </li>
       <li style={{ zIndex: "5", padding: "0 12px" }}>
-        <Link href="#about">
+        <Link href="#about" passHref>
           <NavLink>About</NavLink>
         </Link>
       </li>
       <li style={{ zIndex: "5", padding: "0 12px" }}>
-        <Link href="#contact">
+        <Link href="#contact" passHref>
           <NavLink>Contact</NavLink>
         </Link>
       </li>
