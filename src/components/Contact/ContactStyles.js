@@ -17,7 +17,7 @@ export const ModalTitle = styled.h4`
 `
 export const Container = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
 `;

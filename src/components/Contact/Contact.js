@@ -80,16 +80,15 @@ const ContactMe = () => {
                 alignItems:'start',
                 width:'100%'
             }}>Contact</SectionTitle>
-            {/* <Button variant="primary" onClick={handleShow}>
-                Launch demo modal
-            </Button> */}
-            <Container onClick={handleShow}>
-            <Img src="./images/contact.png" />
-            <Buttons1><GiClick />Hey there! Click me!</Buttons1>
-            </Container>
-            <Modal show={show} onHide={handleClose} size="lg" centered style={{ color: 'black' }}>
-                <Modal.Header>
-                    <div style={{
+            {/* <Container onClick={handleShow}> */}
+            <Container style={{
+                width:'100%'
+            }}>
+            <Img src="./images/contact.png" onClick={handleShow} />
+            {/* <Buttons1><GiClick />Hey there! Click me!</Buttons1> */}
+            {/* <Modal show={show} onHide={handleClose} size="lg" centered style={{ color: 'black' }}> */}
+                {/* <Modal.Header> */}
+                    {/* <div style={{
                         display: 'flex',
                         justifyContent: "space-between",
                         alignItems: 'center',
@@ -97,13 +96,16 @@ const ContactMe = () => {
                     }} onClick={handleClose}>
                         <Modal.Title><ModalTitle>FeedBack</ModalTitle></Modal.Title>
                         <CloseButton variant="white" />
-                    </div>
-                </Modal.Header>
-                <Modal.Body
+                    </div> */}
+                {/* </Modal.Header> */}
+                {/* <Modal.Body
                 // style={{ backgroundColor: 'rgba(52, 0, 102, 0.1)', }}
-                >
+                > */}
                     <Form 
                         onSubmit={handleSubmit}
+                        style={{
+                            width:'80%'
+                        }}
                     >
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                             <Form.Label>Name</Form.Label>
@@ -158,8 +160,10 @@ const ContactMe = () => {
                             </Button>
                         </Modal.Footer>
                     </Form>
-                </Modal.Body>
-            </Modal>
+            </Container>
+
+                {/* </Modal.Body> */}
+            {/* </Modal> */}
         </Section >
     )
 }
